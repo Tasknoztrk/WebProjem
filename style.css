@@ -6,7 +6,7 @@ footer
 {
   text-align: center;
   background-color: #666666;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 50px;
 }
 
@@ -312,4 +312,13 @@ img:hover {
 }
 p {
   color: red;
+}
+.link {
+  color: #000;
+}
+.link:hover {
+  text-decoration: none;
+}
+#ad:hover{
+  background-color: red;
 }
