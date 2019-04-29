@@ -13,13 +13,15 @@
     <h1 align="center">OYUN HABER VE FORUM</h1>
   </div>
   <a class="link" href="sign up.html" target="_self">
-  <button class="tablink" onclick="openPage('Contact', this, 'blue')">SIGN UP</button></a>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">KAYIT OL</button></a>
   </header>
 
 <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">ANA SAYFA</button>
 <a href="haber.html" target="_self">
 <button class="tablink" onclick="openPage('Contact', this, 'blue')">HABERLER</button></a>
+<a href="iletişim.html" target="_self">
 <button class="tablink" onclick="openPage('Contact', this, 'blue')">İLETİŞİM</button>
+<a href="hakkımızda.html" target="_self">
 <button class="tablink" onclick="openPage('About', this, 'orange')">HAKKIMIZDA</button>
 <div align=center id="Home" class="tabcontent">
   <h3>GÜNCEL HABERLER</h3>
@@ -135,23 +137,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
-  <div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p>
-  
-
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div>
 <script>
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
