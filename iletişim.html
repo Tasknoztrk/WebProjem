@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HAKKIMIZDA</title>
+	<title>İLETİŞİM</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body background="BLACK_IV_desktop-1.jpg">
 <header>
@@ -23,14 +24,31 @@
 <button class="tablink" onclick="openPage('Contact', this, 'blue')">İLETİŞİM</button></a>
 <a href="hakkımızda.html" target="_self">
 <button class="tablink" onclick="openPage('About', this, 'orange')">HAKKIMIZDA</button></a>
-<br><br>
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">Merhaba Ben Taşkın</h1>
-    <p>Ve Bilgisayar Mühendisiyim.</p>
-    <button>Hakkımda</button>
-</div>
-  </div>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Adınız</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Soyadınız</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Ülke</label>
+    <select id="country" name="country">
+      <option value="türkiye">Türkiye</option>
+      <option value="kanada">Kanada</option>
+      <option value="usa">USA</option>
+      <option value="almanya">Almanya</option>
+      <option value="japonya">Japonya</option>
+    </select>
+
+    <label for="subject">Konu</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Gönder">
+  </form>
 </div>
 
 </body>

@@ -96,7 +96,7 @@ footer
 
 *
 {
-  color: #fff;
+  color: white;
   font-size: 28px;
   font-weight: 300;
   box-sizing: border-box;
@@ -124,11 +124,13 @@ body
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 20%;
+  border-radius: 16px;
 }
 
 .tablink:hover {
   background-color: #777;
+  border-radius: 16px;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -325,12 +327,13 @@ p {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("99907_640.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-radius: 16px;
 }
 
 .hero-text {
@@ -351,9 +354,45 @@ p {
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
+  border-radius: 16px;
 }
 
 .hero-text button:hover {
   background-color: #555;
   color: white;
+  border-radius: 16px;
+}
+/* iletişim formu */
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: black;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
 }
