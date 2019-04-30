@@ -9,7 +9,7 @@
 </head>
 <body background="BLACK_IV_desktop-1.jpg">
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width: auto; height: 10%; float: right;">Kayıt Ol</button>
+<button class="button" onclick="document.getElementById('id01').style.display='block'" style="width: auto;  float: right;"><span>Kayıt Ol</span></button>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -40,6 +40,36 @@
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">İptal</button>
         <button type="submit" class="signupbtn">Kayıt Ol</button>
       </div>
+    </div>
+  </form>
+</div>
+
+<button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span>Oturum Aç</span></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Kullanıcı Adı</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Parola</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Oturum Aç</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">İptal</button>
+      <span class="psw">Parolamı <a href="#">unuttum?</a></span>
     </div>
   </form>
 </div>
@@ -97,12 +127,12 @@
 
 <nav>
     Popüler Haberler
- 
-      <div class="container1">
+ <br><br>
+  <div class="container1">
   <img src="dayg.jpg" alt="Notebook" style="width:100%;">
   <div class="content">
     
-    <p><font size="3">Lorem ipsum dolor sit amet, an his etiam</font></p>
+    <p>Days Gone Çıktı!</font></p>
   </div>
 </div>
 
@@ -114,9 +144,11 @@
   </section>
   <aside>
     İlginizi Çekebilecek Haberler<br><br>
-    Resim 1<br>
-    Konu Başlığı
-
+  <div class="container1">
+  <img src="752x395-pubg-nedir-nasil-oynaniyor-1550058338611.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    
+    <p>PUBG, ‘Silah Ustalık’ Sistemini Devreye Soktu</font></p>
   </aside>
   <footer>
     Copyright © 2019 Taşkın Öztürk Tüm hakları saklıdır.
